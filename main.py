@@ -5,7 +5,7 @@ import time
 red = 18
 amber = 23
 green = 24
-track = 25
+track = 8
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -18,7 +18,7 @@ GPIO.setup(track,GPIO.OUT) # TRACK POWER
 GPIO.output(red,GPIO.HIGH)
 GPIO.output(amber,GPIO.LOW)
 GPIO.output(green,GPIO.LOW)
-time.sleep(5)
+time.sleep(3)
 
 GPIO.output(red,GPIO.HIGH)
 GPIO.output(amber,GPIO.HIGH)

@@ -23,3 +23,7 @@ if start == y:
     GPIO.output(red,GPIO.LOW)
     GPIO.output(amber,GPIO.LOW)
     GPIO.output(green,GPIO.HIGH)
+
+else:
+    print("Goodbye!")
+    exit()

@@ -2,10 +2,10 @@ import RPi.GPIO as GPIO
 import time
 
 
-red = 18
+red = 8
 amber = 23
 green = 24
-track = 8
+track = 18
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -13,7 +13,7 @@ GPIO.setwarnings(False)
 GPIO.setup(red,GPIO.OUT) # RED LIGHT
 GPIO.setup(amber,GPIO.OUT) # AMBER LIGHT
 GPIO.setup(green,GPIO.OUT) # GREEN LIGHT
-GPIO.setup(track,GPIO.OUT) # TRACK POWER
+pwm = GPIO.setup(track, 1000) # TRACK POWER
 
 GPIO.output(red,GPIO.HIGH)
 GPIO.output(amber,GPIO.LOW)
@@ -30,4 +30,4 @@ time.sleep(2)
 GPIO.output(red,GPIO.LOW)
 GPIO.output(amber,GPIO.LOW)
 GPIO.output(green,GPIO.HIGH)
-GPIO.output(track,GPIO.HIGH)
+pwm.start(100)

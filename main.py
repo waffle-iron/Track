@@ -13,7 +13,7 @@ GPIO.setwarnings(False)
 GPIO.setup(red,GPIO.OUT) # RED LIGHT
 GPIO.setup(amber,GPIO.OUT) # AMBER LIGHT
 GPIO.setup(green,GPIO.OUT) # GREEN LIGHT
-pwm = GPIO.setup(track, 1000) # TRACK POWER
+pwm = GPIO.PWM(track, 1000) # TRACK POWER
 
 GPIO.output(red,GPIO.HIGH)
 GPIO.output(amber,GPIO.LOW)

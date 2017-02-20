@@ -16,9 +16,13 @@ GPIO.setup(green,GPIO.OUT) # GREEN LIGHT
 GPIO.setup(track,GPIO.OUT) # TRACK POWER
 
 GPIO.output(red,GPIO.HIGH)
+GPIO.output(amber,GPIO.LOW)
+GPIO.output(green,GPIO.LOW)
 time.sleep(5)
 
+GPIO.output(red,GPIO.HIGH)
 GPIO.output(amber,GPIO.HIGH)
+GPIO.output(green,GPIO.LOW)
 time.sleep(2)
 
 GPIO.output(red,GPIO.LOW)

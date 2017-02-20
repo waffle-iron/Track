@@ -11,6 +11,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(red,GPIO.OUT) # RED LIGHT
 GPIO.setup(amber,GPIO.OUT) # AMBER LIGHT
 GPIO.setup(green,GPIO.OUT) # GREEN LIGHT
+GPIO.setup(track,GPIO.OUT) # TRACK POWER
 
 start = raw_input("Would you like to start? (y/n): ")
 if start == "y":

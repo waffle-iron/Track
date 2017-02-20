@@ -5,6 +5,7 @@ import time
 red = 18
 amber = 23
 green = 24
+track = # INSERT TRACK PIN HERE
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(red,GPIO.OUT) # RED LIGHT
@@ -23,6 +24,7 @@ if start == y:
     GPIO.output(red,GPIO.LOW)
     GPIO.output(amber,GPIO.LOW)
     GPIO.output(green,GPIO.HIGH)
+    GPIO.output(track,GPIO.HIGH)
 
 else:
     print("Goodbye!")

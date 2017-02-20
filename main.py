@@ -8,6 +8,8 @@ green = 24
 track = 25
 
 GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
 GPIO.setup(red,GPIO.OUT) # RED LIGHT
 GPIO.setup(amber,GPIO.OUT) # AMBER LIGHT
 GPIO.setup(green,GPIO.OUT) # GREEN LIGHT

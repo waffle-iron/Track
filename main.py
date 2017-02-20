@@ -13,7 +13,7 @@ GPIO.setup(amber,GPIO.OUT) # AMBER LIGHT
 GPIO.setup(green,GPIO.OUT) # GREEN LIGHT
 
 start = raw_input("Would you like to start? (y/n): ")
-if start == y:
+if start == "y":
 
     GPIO.output(red,GPIO.HIGH)
     time.sleep(5)

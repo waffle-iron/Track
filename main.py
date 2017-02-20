@@ -15,20 +15,13 @@ GPIO.setup(amber,GPIO.OUT) # AMBER LIGHT
 GPIO.setup(green,GPIO.OUT) # GREEN LIGHT
 GPIO.setup(track,GPIO.OUT) # TRACK POWER
 
-start = raw_input("Would you like to start? (y/n): ")
-if start == "y":
+GPIO.output(red,GPIO.HIGH)
+time.sleep(5)
 
-    GPIO.output(red,GPIO.HIGH)
-    time.sleep(5)
+GPIO.output(amber,GPIO.HIGH)
+time.sleep(2)
 
-    GPIO.output(amber,GPIO.HIGH)
-    time.sleep(2)
-
-    GPIO.output(red,GPIO.LOW)
-    GPIO.output(amber,GPIO.LOW)
-    GPIO.output(green,GPIO.HIGH)
-    GPIO.output(track,GPIO.HIGH)
-
-else:
-    print("Goodbye!")
-    exit()
+GPIO.output(red,GPIO.LOW)
+GPIO.output(amber,GPIO.LOW)
+GPIO.output(green,GPIO.HIGH)
+GPIO.output(track,GPIO.HIGH)

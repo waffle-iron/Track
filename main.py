@@ -29,5 +29,5 @@ time.sleep(2)
 
 GPIO.output(red,GPIO.LOW)
 GPIO.output(amber,GPIO.LOW)
-GPIO.output(green,GPIO.HIGH)
+GPIO.output(green,GPIO.LOW)
 GPIO.output(track,GPIO.HIGH)

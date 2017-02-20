@@ -5,7 +5,7 @@ import time
 red = 18
 amber = 23
 green = 24
-track = # INSERT TRACK PIN HERE
+track = 25
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(red,GPIO.OUT) # RED LIGHT

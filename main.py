@@ -3,8 +3,8 @@ import RPi.GPIO as GPIO
 import time
 
 # SET VARIABLES
-red = 24
-amber = 23
+red = 23
+amber = 24
 green = 8
 track = 18
 

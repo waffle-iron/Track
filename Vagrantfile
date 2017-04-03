@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ARTACK/debian-jessie"
+  config.vm.network "forwarded_port", guest: 22, host: 2222, host_ip: "127.0.0.1", id: "ssh"
   config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1", id: "http"
   config.vm.provision :shell, :path => "vm_provision/provision.sh"
 

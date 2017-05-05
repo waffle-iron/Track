@@ -2,10 +2,10 @@
 import RPi.GPIO as GPIO
 
 # SET VARIABLES
-pin = 14
+pin = 8
 
 # INITIALISE RPi.GPIO
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 
 # SETUP GPIO PINS
@@ -15,7 +15,7 @@ GPIO.setup(pin,GPIO.OUT) # RED LIGHT
 print "GO!"
 GPIO.output(pin,GPIO.HIGH)
 
-term = str(input("Type Y to terminate: "))
+term = input("Type Y to terminate: ")
 
 if term == "Y" or term == "y":
     GPIO.cleanup()

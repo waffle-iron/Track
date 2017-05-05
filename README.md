@@ -1,6 +1,6 @@
 # Self-Drive Slot Cars
 
-![Logo](./logo.jpg)
+![Logo](https://github.com/SelfDriveSlotCars/SelfDriveSlotCars/blob/OLD/logo.jpg)
 
 This is the GitHub repository for Self-Drive Slot Cars - a project that simulates how self-driving vehicles can sense the world around them.
 
@@ -15,7 +15,7 @@ In the future, this could be used as a simulation of how self-driving electric v
 ## The team
 The project team is made up of 3 people:
 - [Edward Suckling](https://github.com/edwards070)
-- [Brett Nangle](https://github.com/honeyworks)
+
 - [Luke Tainton](https://github.com/luketainton)
 
 ## Suggestions?

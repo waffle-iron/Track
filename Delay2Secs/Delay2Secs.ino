@@ -18,6 +18,6 @@ void loop() {
   Serial.print("\t output = ");
   Serial.println(outputValue);
   sensorValue = count++;
-
+  
   delay(2000);
 }

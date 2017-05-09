@@ -3,7 +3,7 @@ const int MotorPinSet = 9;
 
 int sensorValue = 0;
 int outputValue = 0;
-int count = 0;
+int count = 250;
 
 void setup() {
   Serial.begin(9600);
@@ -19,5 +19,5 @@ void loop() {
   Serial.println(outputValue);
   sensorValue = count++;
 
-  delay(20000);
+  delay(2000);
 }

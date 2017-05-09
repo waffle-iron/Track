@@ -15,7 +15,7 @@ In the future, this could be used as a simulation of how self-driving electric v
 ## The team
 The project team is made up of 3 people:
 - [Edward Suckling](https://github.com/edwards070)
-
+- [Brett Nangle](https://github.com/honeyworks)
 - [Luke Tainton](https://github.com/luketainton)
 
 ## Suggestions?

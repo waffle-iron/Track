@@ -17,7 +17,10 @@ void loop() {
   Serial.print(sensorValue);
   Serial.print("\t output = ");
   Serial.println(outputValue);
+  
+  if (sensorValue < 350) {
   sensorValue = count++;
-
-  delay(2000);
+  }
+  
+  delay(1000);
 }

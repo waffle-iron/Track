@@ -15,7 +15,8 @@ int LDR2Map = 0;
 int LDR3Map = 0;
 int LDR4Map = 0;
 
-int speed = 300;
+int speed = 325;
+int lapcount = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -33,17 +34,19 @@ void loop() {
   LDR4Map = map(LDR4Value, 0, 1023, 0, 255);
 
   if (LDR1Map < 10) {
-    speed = 280;
+    speed = 330;
   } else if (LDR2Map < 10){
-    speed = 350;
+    speed = 353;
   } else if (LDR3Map < 10) {
-    speed = 280;
+    speed = 340;
   } else if (LDR4Map < 10) {
-    speed = 350;
+    speed = 353;
+    lapcount++;
   }
 
   analogWrite(trackPin, speed);
 
+/*
   Serial.println("   ");
   
   Serial.print("LDR1 Value: ");
@@ -73,6 +76,6 @@ void loop() {
   Serial.print(LDR4Map);
   Serial.print("\t Speed: ");
   Serial.println(speed);
-  
-  delay(250);
+*/
+  delay(1);
 }

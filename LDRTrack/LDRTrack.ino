@@ -1,4 +1,4 @@
-const int trackPin = 9; // GPIO pin connected to the MOSFET that controls the track's power.
+const int trackPin = 13; // GPIO pin connected to the MOSFET that controls the track's power.
 
 // GPIO pins connected to the LDRs mounted to the track.
 const int LDR1 = A0;
@@ -22,7 +22,7 @@ int LDR4Map = 0;
 int LDR5Map = 0;
 
 // Start the car at a speed of 325, and the lap count at 0.
-int speed = 325;
+int speed = 175;
 int autolapcount = 0;
 int manlapcount = 0;
 
@@ -45,13 +45,13 @@ void loop() {
   LDR5Map = map(LDR5Value, 0, 1023, 0, 255);
 
   if (LDR1Map < 10) { // If a car covers LDR1
-    speed = 330; // Speed variable is changed to 330
+    speed = 175; // Speed variable is changed to 330
   } else if (LDR2Map < 10){ // If a car covers LDR2
-    speed = 353; // Speed variable is changed to 353
+    speed = 166; // Speed variable is changed to 353
   } else if (LDR3Map < 10) { // If a car covers LDR3
-    speed = 340; // Speed variable is changed to 340
+    speed = 175; // Speed variable is changed to 340
   } else if (LDR4Map < 10) { // If a car covers LDR4
-    speed = 353; // Speed variable is changed to 353
+    speed = 175; // Speed variable is changed to 353
     autolapcount++; // LDR4 is next to the start line on the automatic track, so as it is covered, the lap count will be incremented by 1. 
   } else if (LDR5Map < 10) { // If a car covers LDR5
     manlapcount++; // LDR5 is next to the start line on the manual track. If it is covered, the manual lap count will be incremented by 1.

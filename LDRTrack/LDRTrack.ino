@@ -36,7 +36,7 @@ void loop() {
   LDR2Value = analogRead(LDR2);
   LDR3Value = analogRead(LDR3);
   LDR4Value = analogRead(LDR4);
-  LDR5Value = analogRead(LDR5);
+  LDR5Value = analogRead(LDR5);fdf
 
   LDR1Map = map(LDR1Value, 0, 1023, 0, 255);
   LDR2Map = map(LDR2Value, 0, 1023, 0, 255);

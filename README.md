@@ -12,12 +12,6 @@ Our intention is to set parameters meaning that the car will finish the race in 
 ## Future plans
 In the future, this could be used as a simulation of how self-driving electric vehicles function in the real world. It shows how the vehicle will be able to use sensors to determine its location and make real-time calculations that will aid in collision avoidance.
 
-## The team
-The project team is made up of 3 people:
-- [Edward Suckling](https://github.com/edwards070)
-- [Brett Nangle](https://github.com/honeyworks)
-- [Luke Tainton](https://github.com/luketainton)
-
 ## Suggestions?
 If you have any suggestions that will help improve the project, please file an issue on this repository, including as much detail as possible.
 

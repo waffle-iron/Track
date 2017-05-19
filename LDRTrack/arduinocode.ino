@@ -126,6 +126,6 @@ void loop() {
   Serial.print("Human: ");
   Serial.println(manlapcount);
 
-  delay(100); // Read the LDR values as fast as possible, as often as possible.
+  delay(1); // Read the LDR values as fast as possible, as often as possible.
 }
 

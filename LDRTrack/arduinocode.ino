@@ -25,6 +25,8 @@ int LDR5Map = 0;
 int speed = 200;
 int autolapcount = 0;
 int manlapcount = 0;
+int prevautolapcount = 0;
+int prevmanlapcount = 0;
 
 void setup() {
   // The following line may not be needed, but is being kept until we're sure.
@@ -43,6 +45,9 @@ void loop() {
   LDR3Map = map(LDR3Value, 0, 1023, 0, 255);
   LDR4Map = map(LDR4Value, 0, 1023, 0, 255);
   LDR5Map = map(LDR5Value, 0, 1023, 0, 255);
+
+  prevmanlapcount = manlapcount;
+  prevautolapcount = autolapcount;
 
   if (LDR1Map < 10) { // If a car covers LDR1
     speed = 175;
@@ -116,6 +121,11 @@ void loop() {
   Serial.println(speed);
 */
 
-  delay(1); // Read the LDR values as fast as possible, as often as possible.
+  Serial.print("Computer: ");
+  Serial.println(autolapcount);
+  Serial.print("Human: ");
+  Serial.println(manlapcount);
+
+  delay(100); // Read the LDR values as fast as possible, as often as possible.
 }
 

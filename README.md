@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/SelfDriveSlotCars/Track.png?label=ready&title=Ready)](https://waffle.io/SelfDriveSlotCars/Track?utm_source=badge)
 # Self-Drive Slot Cars
 
 ![Logo](https://github.com/SelfDriveSlotCars/SelfDriveSlotCars/blob/OLD/logo.jpg)

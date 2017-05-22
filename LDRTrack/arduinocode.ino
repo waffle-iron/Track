@@ -22,7 +22,7 @@ int LDR4Map = 0;
 int LDR5Map = 0;
 
 // Start the car at a speed of 325, and the lap count at 0.
-int speed = 200;
+int speed = 100;
 int autolapcount = 0;
 int manlapcount = 0;
 int prevautolapcount = 0;
@@ -50,35 +50,35 @@ void loop() {
   prevautolapcount = autolapcount;
 
   if (LDR1Map < 10) { // If a car covers LDR1
-    speed = 175;
+    speed = 75;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     delay(250);
-    speed = 200;
+    speed = 100;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
 
 
   } else if (LDR2Map < 10){ // If a car covers LDR2
-    speed = 225;
+    speed = 100;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     delay(100);
-    speed = 150;
+    speed = 75;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     
   } else if (LDR3Map < 10) { // If a car covers LDR3
-    speed = 175;
+    speed = 100;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     delay(500);
-    speed = 225;
+    speed = 100;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     delay(500);
-    speed = 200;
+    speed = 75;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
 
   } else if (LDR4Map < 10) { // If a car covers LDR4
-    speed = 225;
+    speed = 100;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     delay(250);
-    speed = 175;
+    speed = 75;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     
     autolapcount++; // LDR4 is next to the start line on the automatic track, so as it is covered, the lap count will be incremented by 1. 

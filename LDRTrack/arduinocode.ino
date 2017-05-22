@@ -58,24 +58,24 @@ void loop() {
 
 
   } else if (LDR2Map < 10){ // If a car covers LDR2
-    speed = 250;
+    speed = 225;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
-    delay(150);
-    speed = 175;
+    delay(100);
+    speed = 150;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     
   } else if (LDR3Map < 10) { // If a car covers LDR3
     speed = 175;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
-    delay(250);
+    delay(500);
     speed = 225;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
-    delay(750);
+    delay(500);
     speed = 200;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
 
   } else if (LDR4Map < 10) { // If a car covers LDR4
-    speed = 250;
+    speed = 225;
     analogWrite(trackPin, speed); // This writes the speed to the GPIO pin connected to the MOSFET on the breadboard. This regulates power to the track.
     delay(250);
     speed = 175;
@@ -126,6 +126,7 @@ void loop() {
   Serial.print("Human: ");
   Serial.println(manlapcount);
 
-  delay(1); // Read the LDR values as fast as possible, as often as possible.
+  delay(10); // Read the LDR values as fast as possible, as often as possible.
 }
+
 
